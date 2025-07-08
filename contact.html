@@ -8,18 +8,22 @@
 </head>
 <body>
 
-  <header>
-    <h1 class="logo">Wolf</h1>
-    <nav>
-      <ul class="nav-links">
-        
-        <li><a href="about.html">Accueil</a></li>
-        <li><a href="project.html">Projets</a></li>
-        <li><a href="service.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+  <h1 class="logo">Wolf</h1>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="project.html">Projets</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+</header>
 
   <section class="contact">
     <h2>Contactez-moi</h2>
@@ -35,6 +39,16 @@
    <footer>
     <p>&copy; 2025 Wolf. Tous droits réservés.</p>
   </footer>
+  
+<script>
+  const burger = document.querySelector('.burger');
+  const navLinks = document.querySelector('.nav-links');
+
+  burger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    burger.classList.toggle('toggle');
+  });
+</script>
 
 </body>
 </html>
