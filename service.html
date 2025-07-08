@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Services | Wolf</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #222;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .services {
+      padding: 60px 20px;
+      background-color: #f5f5f5;
+      text-align: center;
+    }
+
+    .services h1 {
+      font-size: 2em;
+      margin-bottom: 40px;
+    }
+
+    .service-list {
+      display: grid;
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .service {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+    }
+
+    .service h2 {
+      margin-bottom: 10px;
+      color: #00bfff;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    .service img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+       
+        <li><a href="project.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="services">
+      <h1>Mes Services</h1>
+     <div class="service">
+  <img src="static/creation_S.jpg" alt="Création de site web">
+  <h2>Création de sites web</h2>
+  <p>Je conçois des sites web modernes, responsives et optimisés avec HTML, CSS, JavaScript et plus.</p>
+</div>
+
+<div class="service">
+  <img src="static/dv.jpg" alt="Application web">
+  <h2>Développement d'applications web</h2>
+  <p>Des applications interactives avec des fonctionnalités comme ToDo List, API, login, etc.</p>
+</div>
+
+<div class="service">
+  <img src="static/a.jpg" alt="Assistance technique">
+  <h2>Assistance & Maintenance</h2>
+  <p>Je vous aide à corriger des bugs, améliorer un site existant ou intégrer de nouvelles fonctionnalités.</p>
+</div>
+
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Wolf. Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>
